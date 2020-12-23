@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <main class="container p-5">
+        <div class="alert alert-light" role="alert">
+            <a href="add-money" class="alert-link">Add More Money To Your Account</a>
+        </div>
+
+        <table class="table table-striped">
+            <thead><tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+            </tr></thead>
+            <tbody>
+                {% for item in result %}
+                <tr>
+                    <td>{{ item['symbol'] }}</td>
+                    <td>{{ item['name'] }}</td>
+                    <td>{{ item['shares'] }}</td>
+                    <td>{{ item['price'] }}</td>
+                    <td>{{ item['total'] }}</td>
+                </tr>
+                {% endfor %}
+                <tr><td>CASH</td><td></td><td></td><td></td><td>{{ cash }}</td></tr>
+                <tr><td></td><td></td><td></td><td></td><td><b>{{ total }}</b></td></tr>
+            </tbody>
+        </table>
+    </main>
+{% endblock %}

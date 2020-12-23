@@ -1,0 +1,37 @@
+#home
+{
+    font-family: 'Aleo','Arial';
+    font-size: 15px;
+    color: #C7E0FF;
+    text-decoration: none;
+}
+
+#description
+{
+    font-family: 'Aleo','Arial';
+    text-align: justify;
+    text-justify: inter-word;
+    display: block;
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+#description::first-letter
+{
+  font-family: 'Great Vibes','Arial';
+  font-size: 250%;
+  color: #B65E1A;
+}
+
+#more
+{
+    font-family: 'Aleo','Arial';
+    color: #B65E1A;
+    display: block;
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-decoration: none;
+}
+

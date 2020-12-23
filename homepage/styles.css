@@ -1,0 +1,113 @@
+body
+{
+    background-color: #C7E0FF;
+}
+#about
+{
+    font-family: 'Aleo','Arial';
+    font-size: 15px;
+    color: #C7E0FF;
+    text-decoration: none;
+}
+.form-control
+{
+    font-family: 'Aleo', 'Arial';
+}
+
+.title
+{
+    font-family: 'Aleo', 'Arial';
+    font-size: 40px;
+    color: #341C09;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.arabic-img-top
+{
+    width: 80%;
+    opacity: 0.7;
+    border-radius: 8px;
+}
+
+
+.basque-img-top
+{
+    width: 75%;
+    opacity: 0.7;
+    border-radius: 8px;
+}
+
+.persian-img-top
+{
+    width:83%;
+    opacity: 0.7;
+    border-radius: 8px;
+}
+
+.arabic-img-top:hover{opacity: 1.0;}
+.basque-img-top:hover{opacity: 1.0;}
+.persian-img-top:hover{opacity: 1.0;}
+
+.card-title
+{
+    color: #341C09;
+}
+
+.btn
+{
+    font-family: 'Aleo', 'Arial';
+    background-color: #D96B30;
+    color: #341C09;
+}
+
+.navbar
+{
+    background-color: #341C09;
+}
+
+/* all three cards with languages in line and responsive*/
+.names,
+.col
+{
+    box-sizing: border-box /*so padding and borders are included in width */
+}
+.names
+{
+    font-family: 'Aleo', 'Arial';
+    word-spacing: -1em; /* fix the inline block extra space issue */
+    letter-spacing: -1em; /* fix the inline block extra space issue */
+    overflow: hidden;
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin:100px auto;
+}
+.col
+{
+    vertical-align: top;
+    word-spacing: normal; /* reset child */
+    letter-spacing: normal; /* reset child */
+    display: inline-block;
+    width: 100%; /* the size UNDER the min-width in the media query*/
+    padding: 10px;
+    text-align: left; /* reset child */
+}
+
+@media (min-width:500px)
+{
+    .col
+    {
+        width: 33.333%;
+        max-width: 250px; /* the max-width */
+    }
+}
+
+#footer
+{
+    font-family: 'Aleo', 'Arial';
+    font-size: 15px;
+    color: #C7E0FF;
+}
